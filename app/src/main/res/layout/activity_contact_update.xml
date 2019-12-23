@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactSaveActivity"
+    android:background="#0C0C0C"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:titleTextColor="@android:color/white" />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="Contacts"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>-->
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/roundCardView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="0dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/img_view"
+                android:visibility="gone"
+                tools:visibility="gone"
+                />
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="149dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/oval_contacs"
+            android:text="Upload"
+            android:textColor="#fff"
+            android:textStyle="bold">
+
+        </Button>
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        android:text="First Name"
+        android:textColor="#fff"
+        android:layout_marginLeft="8sp"
+        android:textSize="12sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_fname"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_marginRight="22sp"
+        android:hint="First Name"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:inputType="textCapWords"
+
+        android:textColorHint="#56F0F0DE">
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Last Name"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:textSize="12sp">
+    </TextView>
+
+    <EditText
+
+        android:id="@+id/et_lname"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:inputType="textCapWords"
+        android:singleLine="true"
+        android:hint="Last Name"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Contact Num"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:textSize="12sp">
+    </TextView>
+
+    <EditText
+
+        android:id="@+id/et_num"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:hint="contact number"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE"
+        android:inputType="number">
+    </EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="4sp"
+        android:textStyle="bold"
+        android:layout_marginRight="22sp"
+        android:text="Email"
+        android:textColor="#fff"
+        android:textSize="12sp"></TextView>
+
+    <EditText
+
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:hint="Email id"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4sp"
+        android:text="Works"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:textSize="12sp">
+    </TextView>
+
+    <EditText
+
+        android:id="@+id/et_work"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:hint="Work"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE"
+        android:inputType="number">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginRight="22sp"
+        android:textStyle="bold"
+        android:text="Address"
+        android:textColor="#fff"
+        android:textSize="12sp"></TextView>
+
+    <EditText
+
+        android:id="@+id/et_street"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:hint="Street"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+    </EditText>
+    <EditText
+
+        android:id="@+id/et_city"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:hint="city"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+    </EditText>
+    <EditText
+
+        android:id="@+id/et_state"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:hint="state"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+    </EditText>
+    <EditText
+
+        android:id="@+id/et_postal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:singleLine="true"
+        android:hint="Postcode"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+    </EditText>
+
+    <EditText
+
+        android:id="@+id/et_country"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="8sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_marginRight="22sp"
+        android:hint="Country"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+    </EditText>
+    <EditText
+
+        android:id="@+id/et_website"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="22sp"
+        android:hint="Websites"
+        android:textColor="#fff"
+        android:textColorHint="#56F0F0DE">
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="42dp">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="101dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="37dp"
+            android:background="@drawable/oval_contacs"
+            android:text="Update"
+            android:textColor="#fff"
+            android:textStyle="bold"></Button>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:background="@drawable/oval_contacs"
+            android:textColor="#fff"
+            android:layout_marginLeft="176dp"
+            android:textStyle="bold"
+            android:layout_marginRight="22dp"
+            android:text="cancel">
+
+        </Button>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>
