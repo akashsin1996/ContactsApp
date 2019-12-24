@@ -1,5 +1,4 @@
 # ContactsApp
-This is the ContactsApp
 Sample Contact Application
 =====================================================
 
